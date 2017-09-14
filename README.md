@@ -6,7 +6,7 @@
 
 npm is the package manager for JavaScript and the world’s largest software registry. alfred-npmjs can search and hit the package more quickly than npmjs.com
 
-![](http://ycjcl868.github.io/alfred-npmjs/images/snapshot.png)
+![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/snapshot.png)
 
 ## Download and installation
 Download the latest version from [Github releases page](https://github.com/ycjcl868/alfred-npmjs/releases/latest)
@@ -21,7 +21,7 @@ In Alfred, type `npm`, <kbd>Space</kbd> , `package` your want to search. (eg: `n
 
 Select a package and press <kbd>Enter</kdb> to go to the package `npm.js` repo.
 
-![](http://ycjcl868.github.io/alfred-npmjs/images/usage.gif)
+![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/usage.gif)
 
 
 ## Changelog

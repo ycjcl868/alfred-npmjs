@@ -6,7 +6,7 @@
 
 npm是Node.js默认的、以JavaScript编写的软件包管理系统。
 
-![](http://ycjcl868.github.io/alfred-npmjs/images/snapshot.png)
+![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/snapshot.png)
 
 ## 下载和安装
 下载最新的版本从[Github releases page](https://github.com/ycjcl868/alfred-npmjs/releases/latest)
@@ -21,7 +21,7 @@ npm是Node.js默认的、以JavaScript编写的软件包管理系统。
 
 选择你想要的模块，按下 <kbd>Enter</kdb> 直接链接到该模块的 `npm.js` 主页.
 
-![](http://ycjcl868.github.io/alfred-npmjs/images/usage.gif)
+![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/usage.gif)
 
 
 ## 更新日志
