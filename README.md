@@ -1,2 +1,32 @@
 # alfred-npmjs
-Alfred 3 workflow to search for npm packages with npmjs.com
+
+[中文 README](README-zh_CN.md)
+
+> [Alfred 3](https://www.alfredapp.com) workflow to search for npm packages with [npmjs.com](https://www.npmjs.com/)
+
+npm is the package manager for JavaScript and the world’s largest software registry. alfred-npmjs can search and hit the package more quickly than npmjs.com
+
+![](http://ycjcl868.github.io/alfred-npmjs/images/snapshot.png)
+
+## Download and installation
+Download the latest version from [Github releases page](https://github.com/ycjcl868/alfred-npmjs/releases/latest)
+
+## Features
+- For accurate search (default show 3 packages, you can modify the max number)
+- Display the packages' avator images
+- Cache package lists, if the sum of avator images is greater than 10, the images downloaded could be deleted. (default cache 10 images files)
+
+## Usage
+In Alfred, type `npm`, <kbd>Space</kbd> , `package` your want to search. (eg: `npm lodash`)
+
+Select a package and press <kbd>Enter</kdb> to go to the package `npm.js` repo.
+
+![](http://ycjcl868.github.io/alfred-npmjs/images/usage.gif)
+
+
+## Changelog
+#### v0.1
+- init project
+
+## Contributing
+[GitHub issues](https://github.com/ycjcl868/alfred-npmjs/issues)
