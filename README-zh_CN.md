@@ -1,5 +1,6 @@
 # alfred-npmjs
 
+[Github](https://github.com/ycjcl868/alfred-npmjs)
 [English README](README.md)
 
 > [Alfred 3](https://www.alfredapp.com) 去快速搜索 [npmjs.com](https://www.npmjs.com/) 上的模块信息

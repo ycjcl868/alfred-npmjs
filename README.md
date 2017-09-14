@@ -1,5 +1,6 @@
 # alfred-npmjs
 
+[Github](https://github.com/ycjcl868/alfred-npmjs)
 [中文 README](README-zh_CN.md)
 
 > [Alfred 3](https://www.alfredapp.com) workflow to search for npm packages with [npmjs.com](https://www.npmjs.com/)
