@@ -19,7 +19,7 @@ npm是Node.js默认的、以JavaScript编写的软件包管理系统。
 ## Usage
 在 Alfred 中, 输入 `npm`, <kbd>Space</kbd> , `package` 为你想要查找的模块. (例如: `npm lodash`)
 
-选择你想要的模块，按下 <kbd>Enter</kdb> 直接链接到该模块的 `npm.js` 主页.
+选择你想要的模块，按下 <kbd>Enter</kbd> 直接链接到该模块的 `npm.js` 主页.
 
 ![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/usage.gif)
 

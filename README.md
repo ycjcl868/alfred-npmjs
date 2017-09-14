@@ -19,7 +19,7 @@ Download the latest version from [Github releases page](https://github.com/ycjcl
 ## Usage
 In Alfred, type `npm`, <kbd>Space</kbd> , `package` your want to search. (eg: `npm lodash`)
 
-Select a package and press <kbd>Enter</kdb> to go to the package `npm.js` repo.
+Select a package and press <kbd>Enter</kbd> to go to the package `npm.js` repo.
 
 ![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/usage.gif)
 
