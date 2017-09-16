@@ -5,12 +5,12 @@
 
 > [Alfred 3](https://www.alfredapp.com) workflow to search for npm packages with [npmjs.com](https://www.npmjs.com/)
 
-npm is the package manager for JavaScript and the world’s largest software registry. alfred-npmjs can search and hit the package more quickly than npmjs.com
+npm is the package manager for JavaScript and the world’s largest software registry. alfred-npmjs can search and reach the package repo page more quickly than npmjs.com
 
 ![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/snapshot.png)
 
 ## Download and installation
-Download the latest version from [Github releases page](https://github.com/ycjcl868/alfred-npmjs/releases/latest)
+Download the latest version from [Github releases page](https://github.com/ycjcl868/alfred-npmjs/releases/latest) or [packal download](http://www.packal.org/workflow/npmsearch)
 
 ## Features
 - For accurate search (default show 3 packages, you can modify the max number)

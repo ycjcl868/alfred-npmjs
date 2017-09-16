@@ -10,7 +10,7 @@ npm是Node.js默认的、以JavaScript编写的软件包管理系统。
 ![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/snapshot.png)
 
 ## 下载和安装
-下载最新的版本从[Github releases page](https://github.com/ycjcl868/alfred-npmjs/releases/latest)
+下载最新的版本从[Github releases page](https://github.com/ycjcl868/alfred-npmjs/releases/latest) 或者 [packal下载](http://www.packal.org/workflow/npmsearch)
 
 ## Features
 - 主要针对于模块精确查找(列表默认显示3条相关信息，你可以修改这个最大值)
