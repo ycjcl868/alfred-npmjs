@@ -26,7 +26,10 @@ Select a package and press <kbd>Enter</kbd> to go to the package `npm.js` repo.
 
 
 ## Changelog
-#### v0.1
+#### v1.0.1
+- provide a faster search HK Proxy for Chinese User
+
+#### v1.0.0
 - init project
 
 ## Contributing
