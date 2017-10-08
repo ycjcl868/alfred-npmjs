@@ -58,7 +58,7 @@ def main(wf):
                   autocomplete='workflow:update',
                   icon='icon.png')
 
-  query = wf.args[0].strip()
+  query = wf.args[0].strip().replace('/', '%2F')
 
   data = wf.cached_data(query, functools.partial(queryPackage, query), max_age=MAX_AGE)
   # log.debug('query value is {}'.format(query))

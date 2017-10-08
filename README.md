@@ -26,6 +26,9 @@ Select a package and press <kbd>Enter</kbd> to go to the package `npm.js` repo.
 
 
 ## Changelog
+#### v1.0.2
+- fix: searching error when input a package name including slash.
+
 #### v1.0.1
 - provide a faster search HK Proxy for Chinese User
 
