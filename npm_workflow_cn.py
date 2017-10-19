@@ -71,7 +71,10 @@ def main(wf):
       log.debug('package: {}'.format(package))
       title = package[u'name']
       version = package[u'version']
-      subtitle = package[u'description']
+      try:
+        subtitle = package[u'description']
+      except:
+        subtitle = 'no description'
       link = package[u'links'][u'npm']
 
       avatar = hashlib.md5()
