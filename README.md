@@ -26,6 +26,8 @@ Select a package and press <kbd>Enter</kbd> to go to the package `npm.js` repo.
 
 
 ## Changelog
+#### v1.0.4
+- fix: search URL not work
 #### v1.0.3
 - fix: description optional bug
 

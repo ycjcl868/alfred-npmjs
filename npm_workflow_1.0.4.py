@@ -46,7 +46,7 @@ def clearAvator():
 
 # fetch npm packages list
 def queryPackage(query):
-  url = "https://www.npmjs.com/-/search?text={}&from=0&size={}&quality=1.95&popularity=3.3&maintenance=2.05".format(query, PACKAGE_NUM)
+  url = "https://registry.npmjs.com/-/v1/search?text={}&from=0&size={}&quality=1.95&popularity=3.3&maintenance=2.05".format(query, PACKAGE_NUM)
   return web.get(url).json()
 
 

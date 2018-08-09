@@ -26,6 +26,8 @@ npm是Node.js默认的、以JavaScript编写的软件包管理系统。
 
 
 ## 更新日志
+#### v1.0.4
+- 修复：搜索url失效
 #### v1.0.3
 - 修复: npm模块包 `description` 可选
 #### v1.0.2
