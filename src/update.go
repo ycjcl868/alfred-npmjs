@@ -11,6 +11,8 @@ import (
 const UPDATE_JOB_NAME = "checkForUpdate"
 
 func showUpdateStatus() {
+	log.Printf("doCheck: %v\n", doCheck)
+
 	if doCheck {
 		wf.Configure(aw.TextErrors(true))
 		log.Println("Checking for updates...")
@@ -29,15 +31,11 @@ func showUpdateStatus() {
 		}
 	}
 
-	if query != "" {
-		return
-	}
-
-	if wf.UpdateAvailable() {
+	if query == "" && wf.UpdateAvailable() {
 		wf.Configure(aw.SuppressUIDs(true))
 		log.Println("Update available!")
 		wf.NewItem("An new version is available!").
-			Subtitle("⇥ or ↩ to install update").
+			Subtitle("↩ to install").
 			Valid(false).
 			Autocomplete("workflow:update").
 			Icon(iconAvailable)

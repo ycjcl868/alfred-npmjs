@@ -11,6 +11,7 @@ alfred-npmjs
 
 .workflow/alfred-npmjs
 .workflow/info.plist
+*.alfredworkflow
 
 # vim turds
 [._]*.s[a-w][a-z]

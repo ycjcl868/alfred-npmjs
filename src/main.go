@@ -51,12 +51,14 @@ func SearchNpmPackages(keyword string) (NpmRepoSearchResponse, error) {
 }
 
 func run() {
-	query = wf.Args()[0]
+	wf.Args() // call to handle magic actions
+	flag.Parse()
+	query = flag.Arg(0)
 
 	// showUpdateStatus()
+
 	log.Printf("query: %s\n", query)
 	if query != "" {
-		wf.ClearData()
 		resp, _ := SearchNpmPackages(query)
 		for _, value := range resp.Objects {
 			title := fmt.Sprintf("%s %s", value.Package.Name, value.Package.Version)
@@ -68,6 +70,10 @@ func run() {
 		}
 	}
 
+	if query != "" {
+		wf.Filter(query)
+	}
+
 	wf.WarnEmpty("No matching items", "Try a different query?")
 	wf.SendFeedback()
 }
@@ -75,6 +81,7 @@ func run() {
 func init() {
 	flag.BoolVar(&doCheck, "check", false, "check for a new version")
 	wf = aw.New()
+	// wf = aw.New(update.GitHub(repo), aw.HelpURL(repo+"/issues"))
 }
 
 func main() {
