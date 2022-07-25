@@ -24,6 +24,18 @@ Select a package and press <kbd>Enter</kbd> to go to the package `npm.js` repo.
 
 ![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/usage.gif)
 
+## Contributing
+
+### Run project
+
+The workflow is written in [Go](https://golang.org/) and uses [AwGo](https://github.com/deanishe/awgo) library for all Alfred related things.
+
+It uses [modd](https://github.com/cortesi/modd) to ease its development.
+
+1. Clone repo
+2. Run `build.sh` (makes symbolic link of [`workflow`](workflow) directory)
+3. Run `modd` (starts a process that automatically builds the workflow with `build.sh` on any changes you make to `.go` files, this builds and places a binary inside [`workflow`](workflow) directory.)
+4. Make changes to code or modify Alfred objects to do what you want! Open debugger in Alfred or run the workflow with `workflow:log` passed in as argument to see the logs Alfred produces.
 
 ## Changelog
 

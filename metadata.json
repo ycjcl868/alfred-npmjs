@@ -1,0 +1,13 @@
+{
+  "alfredworkflow" : {
+    "category" : "Tools",
+    "readme" : "",
+    "createdby" : "KylinKing",
+    "downloadurl" : "https:\/\/github.com\/ycjcl868\/alfred-npmjs\/releases\/download\/v1.1.0\/alfred-npmjs-1.1.0.alfredworkflow",
+    "version" : "1.1.0",
+    "bundleid" : "com.kylinjcl.king",
+    "description" : "npm packages quick search",
+    "name" : "NpmSearch",
+    "webaddress" : "https:\/\/github.com\/ycjcl868\/alfred-npmjs"
+  }
+}
