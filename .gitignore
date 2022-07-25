@@ -1,3 +1,19 @@
 *.DS_Store
 images/
-npm_workflow.pyc
+# Deps
+/vendor/*
+
+alfred-npmjs
+
+# Created by test
+/coverage.*
+/testenv
+
+.workflow/alfred-npmjs
+.workflow/info.plist
+
+# vim turds
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*~
+/tags

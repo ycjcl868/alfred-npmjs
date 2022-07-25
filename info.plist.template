@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.kylinjcl.king</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>AC7C2A6F-F56A-4C34-95D4-3C3B0FB3EC3E</key>
@@ -13,6 +15,16 @@
 				<string>D7475F0E-1E74-4FF4-8323-F4D92B121A34</string>
 				<key>modifiers</key>
 				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>60FB4554-3AF2-43DD-9294-410C1BA466B1</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -29,7 +41,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Npm Search v1.0</string>
+	<string>NpmSearch</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -37,10 +49,14 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -48,7 +64,7 @@
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<true/>
+				<false/>
 				<key>queuedelaymode</key>
 				<integer>1</integer>
 				<key>queuemode</key>
@@ -56,7 +72,7 @@
 				<key>runningsubtext</key>
 				<string>Searching package ...</string>
 				<key>script</key>
-				<string>/usr/bin/python npm_workflow.py "{query}"</string>
+				<string>./alfred-npmjs '{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -75,7 +91,7 @@
 			<key>uid</key>
 			<string>AC7C2A6F-F56A-4C34-95D4-3C3B0FB3EC3E</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -86,8 +102,6 @@
 				<string></string>
 				<key>url</key>
 				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -96,27 +110,57 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>60FB4554-3AF2-43DD-9294-410C1BA466B1</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>60FB4554-3AF2-43DD-9294-410C1BA466B1</key>
+		<dict>
+			<key>xpos</key>
+			<real>490</real>
+			<key>ypos</key>
+			<real>270</real>
+		</dict>
 		<key>AC7C2A6F-F56A-4C34-95D4-3C3B0FB3EC3E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>110</integer>
+			<real>110</real>
 			<key>ypos</key>
-			<integer>90</integer>
+			<real>90</real>
 		</dict>
 		<key>D7475F0E-1E74-4FF4-8323-F4D92B121A34</key>
 		<dict>
 			<key>xpos</key>
-			<integer>560</integer>
+			<real>560</real>
 			<key>ypos</key>
-			<integer>160</integer>
+			<real>160</real>
 		</dict>
 	</dict>
-	<key>webaddress</key>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>version</key>
 	<string></string>
+	<key>webaddress</key>
+	<string>https://github.com/ycjcl868/alfred-npmjs</string>
 </dict>
 </plist>
