@@ -3,7 +3,7 @@
 [Github](https://github.com/ycjcl868/alfred-npmjs)
 [中文 README](README-zh_CN.md)
 
-> [Alfred 3](https://www.alfredapp.com) workflow to search for npm packages with [npmjs.com](https://www.npmjs.com/)
+> [Alfred 3 + 4](https://www.alfredapp.com) workflow to search for npm packages with [npmjs.com](https://www.npmjs.com/)
 
 npm is the package manager for JavaScript and the world’s largest software registry. alfred-npmjs can search and reach the package repo page more quickly than npmjs.com
 
@@ -26,6 +26,11 @@ Select a package and press <kbd>Enter</kbd> to go to the package `npm.js` repo.
 
 
 ## Changelog
+
+#### v1.1.0
+- refactor: using golang
+- feat：speed up icon downloading
+
 #### v1.0.4
 - fix: search URL not work
 #### v1.0.3
