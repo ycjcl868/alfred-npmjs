@@ -70,11 +70,11 @@ func run() {
 	if query != "" {
 		resp, _ := SearchNpmPackages(query)
 		for _, value := range resp.Objects {
+			copyText := fmt.Sprintf("\"%s\": \"^%s\"", value.Package.Name, value.Package.Version)
 			title := fmt.Sprintf("%s %s", value.Package.Name, value.Package.Version)
-			item := wf.NewItem(title).Subtitle(value.Package.Description).Copytext(title).Quicklook(value.Package.Links.Npm).Arg(value.Package.Links.Npm).Valid(true)
+			item := wf.NewItem(title).Subtitle(value.Package.Description).Copytext(copyText).Quicklook(value.Package.Links.Npm).Arg(value.Package.Links.Npm).Valid(true)
 
 			// copy
-			copyText := fmt.Sprintf("\"%s\": \"^%s\"", value.Package.Name, value.Package.Version)
 			item.Cmd().Arg(copyText).Subtitle("Press Enter to copy this \"name\": \"^version\" to clipboard").Valid(true)
 		}
 	}
