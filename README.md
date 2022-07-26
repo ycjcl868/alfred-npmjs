@@ -39,6 +39,9 @@ It uses [modd](https://github.com/cortesi/modd) to ease its development.
 
 ## Changelog
 
+#### v1.1.2
+- feat: add `NPM_REGISTRY` environment variable to change registry host
+
 #### v1.1.0
 - refactor: using golang
 - feat：speed up icon downloading

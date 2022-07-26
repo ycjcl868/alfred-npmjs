@@ -7,12 +7,14 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"strings"
 
 	aw "github.com/deanishe/awgo"
 )
 
 var (
-	repo = "ycjcl868/alfred-npmjs"
+	npmApiHost = "https://registry.npmjs.com"
+	repo       = "ycjcl868/alfred-npmjs"
 
 	doCheck       bool
 	iconAvailable = &aw.Icon{Value: "update-available.png"}
@@ -21,13 +23,12 @@ var (
 )
 
 const (
-	NPM_API_HOST = "https://registry.npmjs.com"
-
-	PACKAGE_NUM = 5
+	PACKAGE_NUM        = 5
+	VARIABLES_REGISTRY = "NPM_REGISTRY"
 )
 
 func SearchNpmPackages(keyword string) (NpmRepoSearchResponse, error) {
-	url := fmt.Sprintf("%s/-/v1/search?text=%s&from=0&size=%d", NPM_API_HOST, keyword, PACKAGE_NUM)
+	url := fmt.Sprintf("%s/-/v1/search?text=%s&from=0&size=%d", npmApiHost, keyword, PACKAGE_NUM)
 
 	repoResp := NpmRepoSearchResponse{}
 
@@ -51,6 +52,14 @@ func SearchNpmPackages(keyword string) (NpmRepoSearchResponse, error) {
 }
 
 func run() {
+	registryFromEnv, _ := wf.Config.Env.Lookup(VARIABLES_REGISTRY)
+
+	if registryFromEnv != "" {
+		npmApiHost = strings.TrimSuffix(registryFromEnv, "/")
+	}
+
+	log.Printf("npmApiHost: %s", npmApiHost)
+
 	wf.Args() // call to handle magic actions
 	flag.Parse()
 	query = flag.Arg(0)

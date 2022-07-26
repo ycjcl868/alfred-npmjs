@@ -158,6 +158,13 @@
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
+	<key>variables</key>
+	<dict>
+		<key>NPM_REGISTRY</key>
+		<string>https://registry.npmjs.com</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>${VERSION}</string>
 	<key>webaddress</key>
