@@ -3,11 +3,15 @@
 [Github](https://github.com/ycjcl868/alfred-npmjs)
 [中文 README](README-zh_CN.md)
 
-> [Alfred 3 + 4](https://www.alfredapp.com) workflow to search for npm packages with [npmjs.com](https://www.npmjs.com/)
+> [Alfred](https://www.alfredapp.com) workflow to search for npm packages with [npmjs.com](https://www.npmjs.com/)
 
 npm is the package manager for JavaScript and the world’s largest software registry. alfred-npmjs can search and reach the package repo page more quickly than npmjs.com
 
 ![](https://raw.githubusercontent.com/ycjcl868/alfred-npmjs/gh-pages/images/snapshot.png)
+
+Using `CMD` + `Enter` to copy package `"name": "^version"` to clipboard.
+
+![](https://user-images.githubusercontent.com/13595509/180936962-3fbd3f6f-0dd6-4424-ace5-173794f27cce.png)
 
 ## Download and installation
 Download the latest version from [Github releases page](https://github.com/ycjcl868/alfred-npmjs/releases/latest) or [packal download](http://www.packal.org/workflow/npmsearch)
