@@ -1,15 +1,13 @@
 package main
 
 import (
-	"encoding/json"
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"log"
-	"net/http"
 	"strings"
 
 	aw "github.com/deanishe/awgo"
+	"github.com/imroc/req/v3"
 )
 
 var (
@@ -28,24 +26,28 @@ const (
 )
 
 func SearchNpmPackages(keyword string) (NpmRepoSearchResponse, error) {
-	url := fmt.Sprintf("%s/-/v1/search?text=%s&from=0&size=%d", npmApiHost, keyword, PACKAGE_NUM)
-
 	repoResp := NpmRepoSearchResponse{}
+	client := req.C()
 
-	req, _ := http.NewRequest("GET", url, nil)
-	req.Header.Set("Connection", "Keep-Alive")
-	resp, err := http.DefaultClient.Do(req)
+	resp, err := client.R().
+		SetRetryCount(2).
+		SetResult(&repoResp).
+		SetQueryParams(map[string]string{
+			"text": keyword,
+			"from": "0",
+			"size": fmt.Sprint(PACKAGE_NUM),
+		}).
+		Get(fmt.Sprintf("%s/-/v1/search", npmApiHost))
+
+	log.Println(resp.Request.URL)
+	log.Println(err)
 
 	if err != nil {
 		return repoResp, err
 	}
 
-	defer resp.Body.Close()
-
-	body, _ := ioutil.ReadAll(resp.Body)
-	err = json.Unmarshal(body, &repoResp)
-	if err != nil {
-		return repoResp, err
+	if !resp.IsSuccess() {
+		log.Println("bad response status", resp.Status)
 	}
 
 	return repoResp, nil
@@ -63,8 +65,6 @@ func run() {
 	wf.Args() // call to handle magic actions
 	flag.Parse()
 	query = flag.Arg(0)
-
-	// showUpdateStatus()
 
 	log.Printf("query: %s\n", query)
 	if query != "" {

@@ -43,6 +43,15 @@ It uses [modd](https://github.com/cortesi/modd) to ease its development.
 
 ## Changelog
 
+#### v1.1.4
+
+- Support automatic request retry.
+- Fix keyword with `/` not searching.
+
+#### v1.1.3
+
+- Fix copy text format
+
 #### v1.1.2
 - feat: add `NPM_REGISTRY` environment variable to change registry host
 
